@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
+    <!-- style switcher-->
+    <link rel="stylesheet" class="alternate-style" title="color-1" href="css/skins/color-1.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+
+    <link rel="stylesheet" href="css/style-switcher.css">
     <!-- font awesome icons -->
-    <link href="css/all.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
     
 </head>
 <body>
@@ -76,7 +84,7 @@
                 </div>
                 <div class="home-img">
                     <div class="img-box inner-shadow">
-                        <img src="img/pic.jpg" class="outer-shadow" alt="profile picture">
+                        <img src="img/profile.jpg" class="outer-shadow" alt="profile picture">
                     </div>
                 </div>
             </div>
@@ -581,9 +589,31 @@
     </div>
     <!-- portfolio popup end -->
 
+    <!-- style switcher start - for demo purposes only -->
+    <div class="style-switcher outer-shadow">
+        <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- style switcher end - for demo purposes only -->
+
     <!-- main js-->
     <script src="js/main.js"></script>
     <!-- font awesome-->
-    <script defer src="js/all.js"></script>
+    <!--script src="js/all.js"></script-->
+    <!-- style switcher js-->
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
